@@ -1,0 +1,753 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.mini-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 70px;
+    font-size: 13px;
+}
+
+.contato-info span {
+    margin-right: 30px;
+}
+
+.contato-info i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.contato-info span:hover {
+    color: rgba(0, 204, 48, 0.89);
+    transform: scale(1.1);
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.redes-sociais a{
+    color:rgba(0, 156, 37, 0.89);;
+    font-size: 25px;
+    margin-left: 15px;
+    transition: 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    color: rgba(0, 204, 48, 0.89);
+    transform: scale(1.2);
+}
+
+.main-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.header-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    letter-spacing: 4px;
+}
+
+.main-nav {
+    margin-right: 50px;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav li {
+    margin-left: 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: rgba(0, 156, 37, 1);
+}
+
+.search-container {
+    position: relative;
+    width: 850px;
+    height: 350px;
+    background-color: rgb(35, 35, 35);
+    border: 2px solid #1a1a1a;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(163, 163, 163, 0.679);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.search-container i {
+    font-size: 45px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.search-container p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 500;
+    max-width: 80%;
+}
+
+.search-container button {
+    padding: 17px 60px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(0, 117, 27, 0.89);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: rgba(0, 204, 48, 0.89);
+    transform: scale(1.1); 
+    transition: 0.3s ease;
+}
+
+.featured-apartments {
+    padding: 50px 70px;
+    text-align: center;  
+}
+
+.featured-apartments .container {
+    margin: 0 auto;  
+    max-width: 1000px;
+}
+
+.featured-apartments h2 {
+    font-size: 42px;
+    font-weight: 400;
+    color: rgba(0, 117, 27, 0.89);
+    margin-bottom: 10px;
+}
+
+.featured-apartments .highlight {
+    font-weight: 800;  
+    color: rgba(0, 77, 18, 0.89);   
+}
+
+.featured-apartments p {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0, 77, 18, 0.89);
+    line-height: 1.5;
+}
+
+.apartment-cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.apartment-card {
+    background-color: #fff;
+    width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.apartment-card:hover {
+    transform: translateY(-10px);
+}
+
+.apartment-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.apartment-card .location {
+    font-size: 14px;
+    color: rgba(0, 117, 27, 0.89);
+    margin-top: 10px;
+}
+
+.apartment-card .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.apartment-card .price {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #333;
+}
+
+
+.apartment-card hr {
+    margin: 20px 0;
+    border: 0.5px solid #eee;
+}
+
+.apartment-card .detail {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.apartment-card .detail-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.apartment-card .detail-item i {
+    margin-right: 8px;
+    color: rgba(0, 117, 27, 0.89);
+}
+
+.apartment-card .view-details {
+    padding: 14px 90px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: rgba(0, 117, 27, 0.89);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apartment-card .view-details:hover {
+    background-color: rgba(0, 66, 15, 0.89);
+    transform: scale(0.9);
+}
+
+.advertise-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 50px 70px;
+    gap: 10px;
+}
+
+.advertise-container {
+    width: 48%;
+    padding: 50px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    background-color: rgba(0, 117, 27, 0.89); 
+    color: #fff;
+}
+
+.right {
+    background-color: #333; 
+    color: #fff;
+}
+
+.advertise-container h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.advertise-container p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.advertise-container button {
+    padding: 14px 35px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: rgba(0, 117, 27, 0.89); 
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.advertise-container button:hover {
+    background-color: rgba(0, 66, 15, 0.89);
+    transform: scale(1.1);
+}
+
+.highlight {
+    font-weight: 700;
+}
+
+.cities-section {
+    background-color: #333; 
+    padding: 50px 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.text-section h2 {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.text-section span {
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.text-section p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+.cities-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.city-card {
+    position: relative;
+    width: 30%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.city-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.city-card:hover img  {
+    transform: scale(1.1);
+}
+
+.city-info {
+    position: relative;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; 
+}
+
+.city-info p {
+    margin-right: 10px;
+}
+
+.city-info i {
+    color: rgba(0, 156, 37, 1);
+    font-size: 20px;
+}
+
+.city-card:hover .city-info {
+    transform: scale(1.1); 
+}
+
+.instagram-section {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.fab.fa-instagram {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+h2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+
+h2 span {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.info-section {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.info-section h2 {
+    color: rgba(0, 156, 37, 1);
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.info-section h2 span {
+    color: rgba(0, 117, 27, 0.89);
+    font-weight: 800;
+}
+
+.info-section p {
+    color: rgba(0, 66, 15, 0.89);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.contact-section {
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    margin-top: auto;
+    flex-grow: 1;
+}
+
+.container-contact {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-info h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.company-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #000000; 
+    transition: 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: rgba(0, 156, 37, 1);
+    transform: scale(1.1);
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-details i {
+    margin-right: 10px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+    transition: 0.3s ease;
+}
+
+.whatsapp-button i {
+    font-size: 1.3rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+.newsletter-container {
+    background-color: rgba(0, 66, 15, 0.89);
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    max-width: 380px; 
+}
+
+.newsletter-container p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.email-input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.subscribe-button {
+    background-color: #000000; 
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: rgba(0, 156, 37, 1);
+    transform: scale(0.9); 
+}
+
+
+@media (max-width: 1200px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .search-container {
+        width: 80%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .apartment-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advertise-section {
+        flex-direction: column;
+    }
+
+    .advertise-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mini-header {
+        flex-direction: column;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .search-container {
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-container button {
+        padding: 12px 50px;
+    }
+
+    .featured-apartments h2 {
+        font-size: 32px;
+    }
+
+    .apartment-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .main-nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-video video {
+        height: 60vh;
+    }
+
+    .search-container {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-container button {
+        padding: 10px 45px;
+    }
+
+    .main-header {
+        height: auto;
+    }
+
+    .apartment-card img {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header-video video {
+        height: 60vh;
+    }
+
+    .search-container {
+        width: 95%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .search-container button {
+        padding: 10px 45px;
+    }
+
+    .main-header {
+        height: auto;
+    }
+
+    .apartment-card img {
+        height: 250px;
+    }
+  }
